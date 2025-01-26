@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Kavoon&family=Miltonian+Tattoo&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Rum+Raisin&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles/puzzlegame.css"> 
+<link href="https://fonts.googleapis.com/css2?family=Mouse+Memoirs&family=Sniglet:wght@400;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kinbasari/minigameguesscolor/styles/mystyle.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kinbasari/minigameguesscolor/styles/popup.css">
+  <title>Puzzle Geser 4x4</title>
+  
+</head>
+<body>
+  <nav class="navbar" x-data>
+  <a href="#" class="navbar-logo"><span>Kin</span>Basari</a>
+  <div class="navbar-nav">
+</div>
+</nav>
+<!-- <section id="disclaimer" class="disclaimer">
+  <div class="content">
+  <h2>Disclaimer</h2>
+  <div class="disclaimer-me">
+    <p>
+      
+    </p>
+  </div>
+</div>
+</section> -->
+
+  <div class="puzzlegame">
+  <h1>Puzzle <span>Game</span></h1>
+  <p><div class="level">Level: <span id="level">1</span></div></p>
+  <p><div class="container" id="puzzle"></div></p>
+  </div>
+  
+
+
+  <!-- Tambahkan elemen audio -->
+  <audio id="moveSound" src="sound/pressbtn.mp3"></audio>
+  <audio id="levelCompleteSound" src="sound/endgame.mp3"></audio>
+
+<!-- Pop up -->
+<div class="popup-overlay" id="popup">
+ <div class="popup-content">
+ <button onclick="closePopup()" class="close-popup">Start</button>
+ <h2>Aturan Dasar Permainan</h2>
+ <p></p>
+
+ <hr>
+ <div class="popup-paragraph">
+
+<span>Tujuan: </span>Susun angka dari 1 hingga 15 secara berurutan (1, 2, 3, ..., 15) di dalam grid 4x4, disusun mulai dari kiri ke kanan dan atas ke bawah, dengan satu kotak kosong di bagian bawah kanan.
+<br><span>Cara  Bermain: </span>
+<br><span>1. </span>Grid terdiri dari angka-angka 1 hingga 15, serta satu kotak kosong (16 slot total).
+<br><span>2. </span>Geser angka di dekat kotak kosong ke posisi kotak kosong untuk mengatur urutan angka.
+<br><span>3. </span>Ulangi langkah ini hingga semua angka tersusun sesuai urutan.
+
+<br><span>Strategi Dasar: </span>
+<br><span>1. </span>Fokus pada penyusunan baris atau kolom secara bertahap.
+<br><span>2. </span>Mulailah dengan menyusun angka di baris pertama, diikuti baris kedua, dan seterusnya.
+<br><span>3. </span>Jangan terlalu banyak mengacak baris yang sudah tersusun. <br> <p></p> <br>
+<p class="end-prg">Selamat bermain dan semoga sukses dalam menyusun puzzle dengan cepat</p>
+</div>
+ </div>
+</div>
+
+
+<script src="script/puzzlegame.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/kinbasari/minigameguesscolor/scripts/popup.js"></script>
+
+</body>
+</html>
